@@ -1564,7 +1564,7 @@
  *     |    [-]    |
  *     O-- FRONT --+
  */
-#define NOZZLE_TO_PROBE_OFFSET { -12, -41, -4.0 }   //Hictop 3dp-08bk + OMRON E2E2-X5MC1 2M (sensing distance = 4mm)
+#define NOZZLE_TO_PROBE_OFFSET { -12, -41, -4.0 }   //Hictop 3dp-08bk + OMRON E2E2-X5MC1 2M (sensing distance > 4mm)
 
 // Enable and set to use a specific tool for probing. Disable to allow any tool.
 #define PROBING_TOOL 0
@@ -1804,7 +1804,7 @@
 // @section geometry
 
 // The size of the printable area
-#define X_BED_SIZE 210  //Hictop or someone telling that this is 220?
+#define X_BED_SIZE 210  //Hictop
 #define Y_BED_SIZE 270  //Hictop
 
 // Travel limits (linear=mm, rotational=°) after homing, corresponding to endstop positions.
