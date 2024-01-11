@@ -1172,7 +1172,7 @@
 #define X_MAX_ENDSTOP_HIT_STATE LOW   //Hictop
 #define Y_MIN_ENDSTOP_HIT_STATE LOW   //Hictop
 #define Y_MAX_ENDSTOP_HIT_STATE LOW   //Hictop
-#define Z_MIN_ENDSTOP_HIT_STATE HIGH
+#define Z_MIN_ENDSTOP_HIT_STATE LOW   //Hictop
 #define Z_MAX_ENDSTOP_HIT_STATE LOW   //Hictop
 #define I_MIN_ENDSTOP_HIT_STATE HIGH
 #define I_MAX_ENDSTOP_HIT_STATE HIGH
@@ -1186,7 +1186,7 @@
 #define V_MAX_ENDSTOP_HIT_STATE HIGH
 #define W_MIN_ENDSTOP_HIT_STATE HIGH
 #define W_MAX_ENDSTOP_HIT_STATE HIGH
-#define Z_MIN_PROBE_ENDSTOP_HIT_STATE HIGH
+#define Z_MIN_PROBE_ENDSTOP_HIT_STATE LOW //Hictop
 
 // Enable this feature if all enabled endstop pins are interrupt-capable.
 // This will remove the need to poll the interrupt pins, saving many CPU cycles.
@@ -1564,7 +1564,7 @@
  *     |    [-]    |
  *     O-- FRONT --+
  */
-#define NOZZLE_TO_PROBE_OFFSET { -12, -41, -4.0 }   //Hictop 3dp-08bk + OMRON E2E2-X5MC1 2M (sensing distance = 4mm)
+#define NOZZLE_TO_PROBE_OFFSET { -12, -41, -1.15 }   //Hictop 3dp-08bk + OMRON E2E2-X5MC1 2M (sensing distance = 4mm)
 
 // Enable and set to use a specific tool for probing. Disable to allow any tool.
 #define PROBING_TOOL 0
