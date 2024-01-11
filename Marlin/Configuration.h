@@ -1564,7 +1564,7 @@
  *     |    [-]    |
  *     O-- FRONT --+
  */
-#define NOZZLE_TO_PROBE_OFFSET { -12, -41, -0.5 }   //Hictop 3dp-08bk + OMRON E2E2-X5MC1 2M (sensing distance = 4mm)
+#define NOZZLE_TO_PROBE_OFFSET { -12, -41, -4.0 }   //Hictop 3dp-08bk + OMRON E2E2-X5MC1 2M (sensing distance = 4mm)
 
 // Enable and set to use a specific tool for probing. Disable to allow any tool.
 #define PROBING_TOOL 0
