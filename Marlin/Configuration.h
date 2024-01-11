@@ -1324,7 +1324,7 @@
  *
  * See https://github.com/synthetos/TinyG/wiki/Jerk-Controlled-Motion-Explained
  */
-//#define S_CURVE_ACCELERATION
+#define S_CURVE_ACCELERATION    //Hictop
 
 //===========================================================================
 //============================= Z Probe Options =============================
@@ -1564,7 +1564,7 @@
  *     |    [-]    |
  *     O-- FRONT --+
  */
-#define NOZZLE_TO_PROBE_OFFSET { -12, -41, -1.15 }   //Hictop 3dp-08bk + OMRON E2E2-X5MC1 2M (sensing distance = 4mm)
+#define NOZZLE_TO_PROBE_OFFSET { -12, -41, -0.5 }   //Hictop 3dp-08bk + OMRON E2E2-X5MC1 2M (sensing distance = 4mm)
 
 // Enable and set to use a specific tool for probing. Disable to allow any tool.
 #define PROBING_TOOL 0
@@ -1733,8 +1733,8 @@
 
 // Invert the stepper direction. Change (or reverse the motor connector) if an axis goes the wrong way.
 #define INVERT_X_DIR false
-#define INVERT_Y_DIR false  //Hictop
-#define INVERT_Z_DIR true   //Hictop
+#define INVERT_Y_DIR true  //Hictop
+#define INVERT_Z_DIR false   //Hictop
 //#define INVERT_I_DIR false
 //#define INVERT_J_DIR false
 //#define INVERT_K_DIR false
@@ -1804,7 +1804,7 @@
 // @section geometry
 
 // The size of the printable area
-#define X_BED_SIZE 210  //Hictop
+#define X_BED_SIZE 210  //Hictop or someone telling that this is 220?
 #define Y_BED_SIZE 270  //Hictop
 
 // Travel limits (linear=mm, rotational=°) after homing, corresponding to endstop positions.
@@ -2264,7 +2264,7 @@
 #endif
 
 // Homing speeds (linear=mm/min, rotational=°/min)
-#define HOMING_FEEDRATE_MM_M { (50*60), (50*60), (4*60) }
+#define HOMING_FEEDRATE_MM_M { (50*60), (50*60), (6*60) }
 
 // Validate that endstops are triggered on homing moves
 #define VALIDATE_HOMING_ENDSTOPS
@@ -2342,13 +2342,13 @@
  *   M501 - Read settings from EEPROM. (i.e., Throw away unsaved changes)
  *   M502 - Revert settings to "factory" defaults. (Follow with M500 to init the EEPROM.)
  */
-//#define EEPROM_SETTINGS     // Persistent storage with M500 and M501
+#define EEPROM_SETTINGS     // Hictop. Persistent storage with M500 and M501
 //#define DISABLE_M503        // Saves ~2700 bytes of flash. Disable for release!
 #define EEPROM_CHITCHAT       // Give feedback on EEPROM commands. Disable to save flash.
 #define EEPROM_BOOT_SILENT    // Keep M503 quiet and only give errors during first load
 #if ENABLED(EEPROM_SETTINGS)
   //#define EEPROM_AUTO_INIT  // Init EEPROM automatically on any errors.
-  //#define EEPROM_INIT_NOW   // Init EEPROM on first boot after a new build.
+  #define EEPROM_INIT_NOW   // Hictop. Init EEPROM on first boot after a new build.
 #endif
 
 // @section host
