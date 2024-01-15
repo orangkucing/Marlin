@@ -1564,7 +1564,7 @@
  *     |    [-]    |
  *     O-- FRONT --+
  */
-#define NOZZLE_TO_PROBE_OFFSET { -12, -41, -4.0 }   //Hictop 3dp-08bk + OMRON E2E2-X5MC1 2M (sensing distance > 4mm)
+#define NOZZLE_TO_PROBE_OFFSET { -12, -41, 0 }   //Hictop 3dp-08bk + OMRON E2E2-X5MC1 2M (sensing distance > 4mm)
 
 // Enable and set to use a specific tool for probing. Disable to allow any tool.
 #define PROBING_TOOL 0
@@ -1804,7 +1804,7 @@
 // @section geometry
 
 // The size of the printable area
-#define X_BED_SIZE 210  //Hictop
+#define X_BED_SIZE 200  //Hictop
 #define Y_BED_SIZE 270  //Hictop
 
 // Travel limits (linear=mm, rotational=°) after homing, corresponding to endstop positions.
@@ -1837,7 +1837,7 @@
  */
 
 // Min software endstops constrain movement within minimum coordinate bounds
-#define MIN_SOFTWARE_ENDSTOPS
+//#define MIN_SOFTWARE_ENDSTOPS //Hictop
 #if ENABLED(MIN_SOFTWARE_ENDSTOPS)
   #define MIN_SOFTWARE_ENDSTOP_X
   #define MIN_SOFTWARE_ENDSTOP_Y
@@ -2342,7 +2342,7 @@
  *   M501 - Read settings from EEPROM. (i.e., Throw away unsaved changes)
  *   M502 - Revert settings to "factory" defaults. (Follow with M500 to init the EEPROM.)
  */
-#define EEPROM_SETTINGS     // Hictop. Persistent storage with M500 and M501
+//#define EEPROM_SETTINGS     // Persistent storage with M500 and M501
 //#define DISABLE_M503        // Saves ~2700 bytes of flash. Disable for release!
 #define EEPROM_CHITCHAT       // Give feedback on EEPROM commands. Disable to save flash.
 #define EEPROM_BOOT_SILENT    // Keep M503 quiet and only give errors during first load
