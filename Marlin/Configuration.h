@@ -1733,8 +1733,8 @@
 
 // Invert the stepper direction. Change (or reverse the motor connector) if an axis goes the wrong way.
 #define INVERT_X_DIR false
-#define INVERT_Y_DIR true  //Hictop
-#define INVERT_Z_DIR false   //Hictop
+#define INVERT_Y_DIR false  //Hictop
+#define INVERT_Z_DIR true   //Hictop
 //#define INVERT_I_DIR false
 //#define INVERT_J_DIR false
 //#define INVERT_K_DIR false
